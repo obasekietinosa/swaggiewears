@@ -3,7 +3,7 @@
 namespace App\Repositories;
 
 use App\Models\Brand;
-use App\Traits\UploadAble;
+use App\Traits\Uploadable;
 use Illuminate\Http\UploadedFile;
 use App\Contracts\BrandContract;
 use Illuminate\Database\QueryException;
@@ -17,7 +17,7 @@ use Doctrine\Instantiator\Exception\InvalidArgumentException;
  */
 class BrandRepository extends BaseRepository implements BrandContract
 {
-    use UploadAble;
+    use Uploadable;
 
     /**
      * CategoryRepository constructor.
