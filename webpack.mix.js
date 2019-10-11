@@ -14,5 +14,5 @@ const mix = require('laravel-mix');
 mix.copyDirectory('resources/admin', 'public/admin');
 mix.copyDirectory('resources/store', 'public/store');
 
-mix.js('resources/js/app.js', 'public/js')
+mix.js('resources/js/app.js', 'public/admin/js')
     .sass('resources/sass/app.scss', 'public/css');
