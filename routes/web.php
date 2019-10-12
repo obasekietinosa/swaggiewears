@@ -1,4 +1,7 @@
 <?php
+
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 require_once 'admin.php';
 /*
 |--------------------------------------------------------------------------
@@ -10,6 +13,8 @@ require_once 'admin.php';
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Auth::routes();
 
 Route::get('/', function () {
     return view('welcome');
